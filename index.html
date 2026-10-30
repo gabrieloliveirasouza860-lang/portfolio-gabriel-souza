@@ -1,0 +1,143 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Gabriel Souza</title>
+  <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="#sobre">Gabriel Oliveira Souza</a>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#skills">Skills</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button id="btn-tema" class="btn-tema" type="button">Tema</button>
+  </header>
+
+  <main>
+    <section id="sobre" class="apresentacao">
+      <img class="foto" src="assets/foto.jpg" alt="foto de Gabriel ">
+      <div class="apresentacao-texto">
+        <p class="saudacao">Olá, eu sou</p>
+        <h1>Gabriel Oliveira Souza</h1>
+        <p>Estudante de tecnologia e desenvolvimento web.</p>
+        <a class="botao" href="#portfolio">Ver projetos</a>
+      </div>
+    </section>
+    <section id="portfolio" class="secao">
+      <h2>Projetos</h2>
+      <div class="carrossel">
+        <button id="btn-anterior" class="seta" type="button" aria-label="Projetos anteriores">&lt;</button>
+
+        <div class="trilho" id="trilho-projetos">
+          <article class="card">
+            <div class="card-imagem">
+              <a href="https://gabrieloliveirasouza860-lang.github.io/projeto-lampada/"target="_blank">
+          <img src="assets/lamp_on_off.png" alt="Foto de duas lâmpadas, uma ligada e outra desligada.">
+              </a> 
+            </div>
+            <h3>Projeto lampada</h3>
+            <p>Uma página para apresentar meu projeto.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-imagem">02</div>
+            <h3>Landing page</h3>
+            <p>Página de divulgação de um serviço.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-imagem">03</div>
+            <h3>Lista de tarefas</h3>
+            <p>Organização de tarefas do dia a dia.</p>
+          </article>
+        
+           <article class="card">
+            <div class="card-imagem">04</div>
+            <h3>Plano de tarefas</h3>
+            <p>Organização de tarefa.</p>
+          </article>
+
+           <article class="card">
+            <div class="card-imagem">05</div>
+            <h3>Lista de compras</h3>
+            <p>Organização</p>
+          </article>
+
+        </div>
+
+        <button id="btn-proximo" class="seta" type="button" aria-label="Próximos projetos">&gt;</button>
+      </div>
+    </section>
+    
+    <section id="skills" class="secao">
+      <h2>Skills</h2>
+      <p>Habilidades que estou desenvolvendo.</p>
+
+      <div class="skill">
+        <div class="skill-cabecalho">
+          <span>HTML</span><span>65%</span>
+        </div>
+        <div class="barra">
+          <div class="nivel" data-nivel="65"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-cabecalho">
+          <span>CSS</span><span>45%</span>
+        </div>
+        <div class="barra">
+          <div class="nivel" data-nivel="45"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-cabecalho">
+          <span>JavaScript</span><span>50%</span>
+        </div>
+        <div class="barra">
+          <div class="nivel" data-nivel="50"></div>
+        </div>
+      </div>
+    </section>
+    <section id="contato" class="secao">
+      <h2>Contato</h2>
+      <div class="contato-grid">
+        <article class="card contato-card">
+          <h3>Vamos conversar?</h3>
+          <p>Use o formulário para deixar uma mensagem.</p>
+          <p><strong>E-mail:</strong> Gabriel.Oliveira@example.com</p>
+        </article>
+
+        <form id="form-contato" class="formulario" novalidate>
+          <label for="nome">Nome</label>
+          <input id="nome" type="text" placeholder="Seu nome">
+
+          <label for="email">E-mail</label>
+          <input id="email" type="email" placeholder="voce@exemplo.com">
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
+
+          <button class="botao" type="submit">Enviar</button>
+          <p id="retorno-formulario" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Gabriel Oliveira · Portfólio pessoal</p>
+  </footer>
+
+
+</body>
+</html>
